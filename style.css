@@ -1,0 +1,53 @@
+body {
+  font-family: system-ui, serif;
+  margin: 0;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  display: block;
+}
+h2 {
+  color: red;
+  display: block;  
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+    width: 200px;
+  }
+
+.container-bienvenida {
+  background-color: rgb(43, 43, 136);
+  background-image: url(./nubes-ws.svg);
+}
+.bienvenida {
+  text-align: center;
+}
+.padreservicios {
+  display: flex;
+  padding: 20px;
+}
+.servicio h3 {
+  text-align: center;
+  color: #7676b5;
+}
+.servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  background: white;
+  border-radius: 5px;
+  color: #787d80;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #1e145a87;
+  border: solid 1px white;
+}
+.bienvenida h2 {
+  color: white;
+  font-size: 15px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Flexbox</title>
+	<style>
+		/* Unidades de medida */
+		html {
+			font-size: 20px;
+		}
+		body {
+			margin: 0;
+		}
+		.container {
+			font-size: 15px;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+		.box {
+			display: flex;
+			font-size: 15px;
+			border:solid 1px orange;
+			min-height: 100vh;
+			width: 100vw;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			height: 100%;
+		}
+		.box ul {
+			display: flex;
+			list-style: none;	
+			width: 50vw;
+		}
+		.box ul li {
+			flex: 1;
+		}
+		.box ul li:first-child {
+			flex: 1;
+		}
+		.container .box:nth-child(1) h1 {
+			color: blue;
+			font-size: 3em;
+        } 
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<h1>Box 1</h1>
+			<ul>
+				<li>INicio</li>
+				<li>About</li>
+				<li>Home 2</li>
+				<li>Contacto</li>
+			</ul>
+		</div>
+		<div class="box">
+			<h1>Box 2</h1>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores quaerat aliquam illo a expedita ipsam odit cumque aspernatur, sunt quibusdam recusandae perferendis suscipit, necessitatibus, animi saepe voluptatem harum inventore.</li>
+				<li>Ullam maxime qui eum voluptates assumenda laudantium quae voluptate aspernatur expedita architecto harum temporibus, inventore ab perspiciatis, totam nesciunt placeat! Doloremque sunt quos sed porro libero omnis magni cumque totam.</li>
+				<li>Animi vitae consequuntur adipisci nisi, iste, cum fugiat nobis voluptas praesentium repellat, sapiente, officiis asperiores odio reprehenderit quisquam! Expedita eum, quos, esse placeat accusamus possimus exercitationem excepturi sunt repudiandae. Nisi.</li>
+			</ul>
+		</div>
+		<div class="box">
+			<h1>Box 3</h1>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi, error, perspiciatis laboriosam itaque commodi numquam dolore nobis exercitationem, distinctio animi dolorum optio doloremque placeat, excepturi perferendis quam corporis officia.</li>
+			</ul>
+		</div>
+		<div class="box">
+			<h1>Box 4</h1>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis accusamus, reprehenderit dolores voluptatem optio nemo aut aperiam molestiae libero hic rem cum? Nesciunt neque ratione recusandae, ad incidunt natus distinctio?</li>
+				<li>Ea laborum perferendis, numquam quod. Commodi nostrum sunt ducimus, impedit mollitia veniam facere autem officia minus eveniet maxime molestiae voluptate incidunt alias quis deleniti adipisci eius aperiam, cupiditate dolorem delectus?</li>
+				<li>Amet ducimus doloribus maxime nostrum dignissimos dolorum quaerat, quam voluptatum natus, nam quas, nisi officiis aperiam modi aliquam ipsam. Numquam omnis, eum ducimus accusamus repellat, dolorem dignissimos illum? Nihil, reprehenderit.</li>
+			</ul>
+		</div>
+</body>
+</html>
